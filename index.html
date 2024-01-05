@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>嵌入的页面</title>
+    <style>
+        /* 添加样式来居中 iframe */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            /* 您之前的样式 */
+            width: 98vw; 
+            height: 98vh;
+            border: 0; /* 移除边框 */
+        }
+    </style>
 </head>
 <body>
 
 <iframe
   src="https://share.fastgpt.in/chat/share?shareId=ed2i3l9xg2tbnsh7izxv1rmb"
-  style="width: 98vw; height: 98vh;"
   frameborder="0" 
   allow="microphone"
-/>
+></iframe>
 
 </body>
 </html>
