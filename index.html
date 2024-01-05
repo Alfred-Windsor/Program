@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>嵌入的页面</title>
     <style>
-        /* 添加样式来居中 iframe */
+        /* 添加样式来居中 iframe 且设置背景和圆角 */
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #f0f0f0; /* 设置背景为浅灰色 */
         }
         iframe {
-            /* 您之前的样式 */
             width: 98vw; 
             height: 98vh;
             border: 0; /* 移除边框 */
+            border-radius: 20px; /* 设置圆角 */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* 添加阴影效果，使之更有浮起的感觉 */
         }
     </style>
 </head>
