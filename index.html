@@ -37,8 +37,7 @@
             var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
             if (isIOS) {
-                // 为iOS设备设置页面缩放到115%
-                document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=1.15, maximum-scale=1.15, user-scalable=no');
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
             }
         });
     </script>
