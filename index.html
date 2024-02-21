@@ -29,18 +29,25 @@
                 height: 90vh;
                 border-radius: 10px;
             }
-            /* 专门为较小屏幕上的输入框设置字体大小 */
-            input, textarea {
-                font-size: 20px; /* 防止iOS在聚焦时自动放大 */
-            }
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 检测是否为iOS设备
+            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+            if (isIOS) {
+                // 为iOS设备设置页面缩放到115%
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=1.15, maximum-scale=1.15, user-scalable=no');
+            }
+        });
+    </script>
 </head>
 <body>
-<iframe
-  src="https://share.fastgpt.in/chat/share?shareId=g3hgur416akgb468bj7jaijn"
-  frameborder="0" 
-  allow="microphone"
-></iframe>
+    <iframe
+        src="https://share.fastgpt.in/chat/share?shareId=g3hgur416akgb468bj7jaijn"
+        frameborder="0" 
+        allow="microphone"
+    ></iframe>
 </body>
 </html>
