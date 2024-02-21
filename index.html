@@ -2,8 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <!-- 保持标准的视口设置 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.15">
     <title>AI工具导航</title>
     <link rel="icon" type="image/png" href="https://raw.gitmirror.com/Alfred-Windsor/AIkit-beta/main/icon.png">
     <style>
@@ -37,7 +36,7 @@
             var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
             if (isIOS) {
-                document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=1.1, maximum-scale=1.1, user-scalable=no');
             }
         });
     </script>
